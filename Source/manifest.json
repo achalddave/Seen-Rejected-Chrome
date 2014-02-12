@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "Seen to Rejected",
+	"version": "0.1",
+	"description": "Replaces 'Seen' in Facebook chats with 'Violently rejected'",
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*.facebook.com/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
+
